@@ -1,0 +1,770 @@
+﻿/*=================================================================================================
+
+	Stylesheet for this website.
+
+  =================================================================================================*/
+
+
+/**************************************************************************************************
+
+	General styling.
+
+ **************************************************************************************************/
+.body
+   {
+   	padding			:  0px;
+   	margin			:  0px;
+	background		:  #e2aaba; /* Old browsers */
+	background		:  -moz-linear-gradient(45deg,  #e2aaba 0%, #8b2240 69%, #000000 100%); /* FF3.6+ */
+	background		:  -webkit-gradient(linear, left bottom, right top, color-stop(0%,#e2aaba), color-stop(69%,#8b2240), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background		:  -webkit-linear-gradient(45deg,  #e2aaba 0%,#8b2240 69%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background		:  -o-linear-gradient(45deg,  #e2aaba 0%,#8b2240 69%,#000000 100%); /* Opera 11.10+ */
+	background		:  -ms-linear-gradient(45deg,  #e2aaba 0%,#8b2240 69%,#000000 100%); /* IE10+ */
+	background		:  linear-gradient(45deg,  #e2aaba 0%,#8b2240 69%,#000000 100%); /* W3C */
+	filter			:  progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2aaba', endColorstr='#8b2240',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	overflow		:  scroll ;
+	width			:  100% ;
+   }
+
+.invisible	
+   {
+	display			:  none !important ;
+    }
+  
+/**************************************************************************************************
+
+	Menu buttons.
+
+ **************************************************************************************************/
+.menu
+   {
+   	width				:  100% ;
+    }
+
+.menu td
+   {
+   	padding				:  0px ;
+   	line-height			:  30px ;
+    }
+    
+    
+.menu-button
+   {
+   	display				:  inline-block ;
+   	cursor				:  pointer ;
+   	font-family			:  Consolas, "Courier New", Arial, Courrier ;
+   	font-size			:  16px ;
+   	font-weight			:  bold ;
+   	background-image		:  url(/public/images/menu-button.png) ;
+   	background-repeat		:  no-repeat ;
+   	background-size			:  100% ;
+   	text-align			:  center ;
+   	vertical-align			:  middle ;
+   	color				:  #F8F4B8 ;
+   	width				:  136px ;
+   	height				:  30px ;
+   	min-width			:  136px ;
+   	line-height			:  30px ;
+   	margin-top			:  0px ;
+   	margin-bottom			:  8px ;
+   	padding-top			:  1px ;
+     }
+
+.menu-button-left
+   {
+     }
+	
+.menu-button-right
+   {
+     }
+	
+.menu-button-middle
+   {
+   	margin-left			:  0px ;
+     }
+	
+.menu-button-default
+   {
+     }
+	
+.menu-button-default:active
+   {
+   	background-image		:  url(/public/images/menu-button-active.png) ;
+	color				:  #000000 ;
+     }
+	
+
+.menu-button-default:hover
+   {
+     }
+ 
+ 
+.menu-button-active
+   {
+     }  
+     
+.menu-button-selected
+   {
+   	background-image		:  url(/public/images/menu-button-selected.png) ;
+   	color				:  #791B36 ;
+    }
+    
+     
+/**************************************************************************************************
+
+	General text classes.
+
+ **************************************************************************************************/
+
+.banner
+   {
+   	width				:  100%;
+   	background-image		:  url(/public/images/header-background.png) ;
+   	background-size			:  100% ;
+   	height				:  66px;
+   	margin				:  0px ;
+   	padding				:  0px ;
+    }
+
+
+.banner-image
+   {
+   	width				:  100% ;
+   	height				:  60px ;
+    }
+ 
+.banner-text
+    {
+    	position			:  absolute ;
+    	top				:  1px ;
+    	left				:  8px ;
+     }   
+
+.subtitle
+   {
+	position			:  absolute ;
+	right				:  8px ;
+	top				:  2px ;
+	display				:  block ; 
+	float				:  right ;
+   	font-family			:  Consolas, "Courier New", Arial, Courrier ;
+   	font-size			:  18px ;
+	font-style			:  italic ;
+   	font-weight			:  bold ;
+   	color				:  #F8F4B8 ;
+    	text-shadow			:  #404040 1px 1px 1px ;
+    }
+
+.subtitle sup
+   {
+   	font-size			:  9px ;
+	font-style			:  italic ;
+   	font-weight			:  bold ;
+	margin-right			:  1px ;
+	text-shadow			:  #404040 1px 1px 1px ;
+    }
+
+.subtitle span
+   {
+	font-size			:  12px ; 
+	font-style			:  normal ;
+	color				:  #000000 ; 
+	font-weight			:  normal ;
+	text-shadow			:  none ;
+	margin-left			:  10px ; 
+    }
+
+.separator 
+   {
+   	margin				:  0px ;
+   	padding				:  0px ;
+    }
+ 
+.language-switch
+   {
+   	position			:  absolute ;
+   	top				:  47px ;
+   	right				:  4px ;
+   	text-align			:  right ;
+    }
+     
+.language-switch div
+   {
+   	font-family			:  "Palatino Linotype", courrier ;
+   	color				:  Black ;
+   	font-size			:  10px ;
+    }
+
+.language-switch div.language-switch-image
+   {
+   	display				:  inline-block ;
+    }
+     
+.language-switch div.language-switch-text
+   {
+   	display				:  none ;
+   	float				:  left ;
+   	margin-right			:  4px ; 
+   	margin-top			:  4px ;
+    }
+     
+
+.language-switch:hover
+   {
+   	cursor				:  pointer ;
+    }
+     
+
+/**************************************************************************************************
+
+	Links.
+
+ **************************************************************************************************/
+a.link, a.link:link, a.link:visited, a.link:hover, a.link:active
+   {
+   	color				:  #4a0f20 ;
+   	text-decoration			:  none ;
+   	font-weight			:  bold ;
+   	border				:  0px ;
+   	outline				:  0px ;
+    }
+
+a.link:hover
+   {
+   	color				: #F2E668 ;
+    }
+
+
+/**************************************************************************************************
+
+	Footer.
+
+ **************************************************************************************************/
+#footer
+   {
+   	padding-left			:  6px ;
+   	padding-right			:  6px ;
+   	margin-top			:  12px ;
+    }
+
+
+#footer  hr
+   {
+   	margin				:  0px; 
+   	padding				:  0px;
+    }
+
+
+#footer .footer-text
+   {
+	font				:  11px Arial, sans-serif; 
+   	color				:  #380b18 ;
+   	vertical-align			:  top ;
+   	padding				:  0px ;
+    }
+
+.footer-text-left a:hover
+   {
+   	color				:  #3C3C3C ;
+   	text-shadow			:  #F2E668 0.1em 0.1em 0.2em ;
+    }
+
+
+/**************************************************************************************************
+
+	Page contents.
+
+ **************************************************************************************************/
+div.page 
+   {
+   	padding-top			:  16px ;
+   	width				:  100% ;
+    }
+    
+.content
+   {
+   	width				:  100% ;
+   	padding-top			:  24px;
+    }
+    
+.content td
+   {
+	vertical-align			:  top ;
+    }
+       
+.content-left
+   {
+	width				:  240px ;
+	min-width			:  240px ;
+	padding-left			:  8px ;
+    }
+ 
+    
+.content-right
+   {
+	width				:  240px ;
+	min-width			:  240px ;
+    }
+    
+.content-filler
+   {
+   	width				:  16px ;
+    }
+    
+    
+.content-page 
+   {
+   	display				:  inline-block ;
+   	width				:  100% ;
+   	vertical-align			:  top ;
+   	height				:  auto ;
+   	min-height			:  500px ;
+   	min-width			:  500px ;
+   	color				:  #000000 ;
+   	background-color		:  #FFFFFF ;
+   	border				:  1px solid #000000 ;
+	-webkit-border-radius		:  4px ;
+	-moz-border-radius		:  4px;
+	border-radius			:  4px ;
+    }
+    
+.content-page .inner
+   {
+   	padding				:  24px 12px ;
+   	word-break			:  break-word;
+    }
+
+.content-item
+   {
+   	display				:  block ;
+   	margin-top			:  12px ;
+   	color				:  #380b18 ;
+   	background-color		:  #F8F4B8 ;
+	-webkit-border-radius		:  4px ;
+	-moz-border-radius		:  4px;
+	border-radius			:  4px ;
+	border				:  1px solid #808080;
+	-webkit-box-shadow		:  rgba( 176, 176, 176, 0.3 ) 2px 2px 2px;
+	-moz-box-shadow			:  rgba( 176, 176, 176, 0.3 ) 2px 2px 2px; 
+	box-shadow			:  rgba( 176, 176, 176, 0.3 ) 2px 2px 2px;
+	padding				:  12px ;
+   	font-family			:  Consolas, "Courier New", Arial, Courrier ;
+   	font-size			:  14px ;
+    }    
+    
+.block-item
+   {
+   	display				:  block ;
+   	margin-top			:  12px ;
+   	color				:  #380b18 ;
+   	background-color		:  #F8F4B8 ;
+	-webkit-border-radius		:  4px ;
+	-moz-border-radius		:  4px;
+	border-radius			:  4px ;
+	border				:  1px solid #808080;
+	-webkit-box-shadow		:  rgba( 176, 176, 176, 0.3 ) 2px 2px 2px;
+	-moz-box-shadow			:  rgba( 176, 176, 176, 0.3 ) 2px 2px 2px; 
+	box-shadow			:  rgba( 176, 176, 176, 0.3 ) 2px 2px 2px;
+	padding				:  4px ;
+   	font-family			:  Consolas, "Courier New", Arial, Courrier ;
+   	font-size			:  14px ;
+    }    
+        
+/**************************************************************************************************
+
+	Tooltips.
+
+ **************************************************************************************************/
+.menu-tooltip-contents
+   {
+   	display				:  none ;
+   	margin-top			:  48px ;
+   	margin-left			:  32px ;
+   	color				:  #380b18 ;
+   	background-color		:  #F8F4B8 ;
+   	max-width			:  500px ;
+	-webkit-border-radius		:  4px ;
+	-moz-border-radius		:  4px;
+	border-radius			:  4px ;
+	border				:  1px solid #808080;
+	-webkit-box-shadow		:  rgba( 176, 176, 176, 0.3 ) 2px 2px 2px;
+	-moz-box-shadow			:  rgba( 176, 176, 176, 0.3 ) 2px 2px 2px; 
+	box-shadow			:  rgba( 176, 176, 176, 0.3 ) 2px 2px 2px;
+	padding				:  12px ;
+   	font-family			:  Consolas, "Courier New", Arial, Courrier ;
+   	font-size			:  12px ;
+    }
+
+
+/**************************************************************************************************
+
+	Quotes.
+
+ **************************************************************************************************/
+.quote 
+   {
+	position			:  absolute ; 
+	top				:  -32px; 
+	right				:  -12px ;
+    }
+
+.quote-block
+   {
+   	background-color		:  #F8F4B8 ;
+   	border				:  1px solid #000000 ;
+   	padding				:  4px 8px ;
+	-webkit-border-radius		:  4px ;
+	-moz-border-radius		:  4px;
+	border-radius			:  4px ;
+	width				:  300px ;
+    }
+
+.quote-title
+   {
+   	color				:  #F8F4B8 ; 
+   	text-align			:  right ;
+   	font-size			:  12px ;
+   	font-family			:  Consolas, "Courier New", Arial, Courrier ;
+   	padding-right			:  6px ;
+   	font-style			:  italic ;
+    }
+
+.quote-text
+   {
+   	display				:  block ;
+   	font-family			:  "Palatino Linotype", times ;
+   	font-size			:  12px ;
+   	text-align			:  justify ;
+    }
+
+.quote-author
+   {
+   	display				:  block ;
+   	width				:  100% ;
+   	text-align			:  right ;
+   	padding-top			:  2px ;
+   	margin-left			:  -4px ;
+   	font-family			:  "Palatino Linotype", times ;
+   	font-size			:  12px ;
+   	font-style			:  italic ;
+    }
+
+.quote-author::after
+   {
+   	content				:  "." ;
+    }
+    
+ 
+ /**************************************************************************************************
+
+	Text tables.
+
+ **************************************************************************************************/
+.text-table-div
+   {
+   	max-width			:  800px ;
+   	max-height			:  500px ;
+   	overflow			:  auto ;
+    }
+    
+.text-table
+   {
+    }
+    
+.text-table h3
+   {
+   	padding				:  0px ;
+   	color				:  #8b2240 ;
+   	margin				:  0px ;
+    }
+ 
+ .text-table ul
+    {
+	list-style-type			:  circle ; 
+	padding				:  0px ; 
+	margin				:  0px ;    	
+     }   
+
+
+/**************************************************************************************************
+
+	Content header.
+
+ **************************************************************************************************/
+.content-title
+   {
+	position			:  absolute ; 
+	top				:  -12px; 
+	right				:  10px ;
+   	display				:  inline-block ;
+   	border-left			:  1px solid #808080;
+   	border-top			:  1px solid #808080;
+   	font-family			:  Consolas, "Courier New", Arial, Courrier ;
+   	font-size			:  14px ;
+   	font-weight			:  bold ;
+   	text-align			:  center ;
+   	background-color		:  #FFFFFF ;
+   	color				:  #791B36 ;
+   	vertical-align			:  middle ;
+   	height				:  18px ;
+   	line-height			:  18px ;
+   	padding				:  6px 12px 2px 11px;
+   	-webkit-border-radius		:  2px ;
+   	-moz-border-radius		:  2px ;
+   	border-radius			:  2px ;
+   	-webkit-box-shadow		:  #B3B3B3 2px 2px 2px ;
+   	-moz-box-shadow			:  #B3B3B3 2px 2px 2px ; 
+   	box-shadow			:  #B3B3B3 2px 2px 2px ;
+   }
+
+
+/**************************************************************************************************
+
+	Left and right block styling.
+
+ **************************************************************************************************/
+.block-container
+   {
+   	display				:  block ;
+   	color				:  #380b18 ;
+   	background-color		:  #F8F4B8 ;
+	-webkit-border-radius		:  4px ;
+	-moz-border-radius		:  4px;
+	border-radius			:  4px ;
+	border				:  1px solid #808080;
+	-webkit-box-shadow		:  rgba( 176, 176, 176, 0.3 ) 2px 2px 2px;
+	-moz-box-shadow			:  rgba( 176, 176, 176, 0.3 ) 2px 2px 2px; 
+	box-shadow			:  rgba( 176, 176, 176, 0.3 ) 2px 2px 2px;
+	padding				:  14px 4px 6px 12px;
+   	font-family			:  Consolas, "Courier New", Arial, Courrier ;
+   	font-size			:  13px ;
+    }    
+
+.block-container ul
+   {
+   	margin				:  2px 0px ;
+    }
+
+.block-container li a
+   {
+   	color				:  #380b18 ;
+   	text-decoration			:  none ;
+    }
+
+.left-block-container
+   {
+   	margin-right			:  4px ;
+    }
+    
+    
+.block-container-title
+   {
+   	display				:  inline-block ;
+   	font-family			:  Consolas, "Courier New", Arial, Courrier ;
+   	font-size			:  14px ;
+   	font-weight			:  bold ;
+	background			:  #e2aaba; /* Old browsers */
+	background-image		:  url(/public/images/background-selected.png);
+	background-repeat		:  repeat-x ;
+   	text-align			:  center ;
+   	color				:  #791B36 ;
+   	vertical-align			:  middle ;
+   	height				:  18px ;
+   	line-height			:  18px ;
+   	padding				:  6px 12px 2px 12px;
+   	-webkit-border-radius		:  2px ;
+   	-moz-border-radius		:  2px ;
+   	border-radius			:  2px ;
+   	-webkit-box-shadow		:  #B3B3B3 2px 2px 2px ;
+   	-moz-box-shadow			:  #B3B3B3 2px 2px 2px ; 
+   	box-shadow			:  #B3B3B3 2px 2px 2px ;
+   }
+
+.left-block-container-title
+   {
+	position			:  absolute ; 
+	top				:  -16px; 
+	left				:  8px ;
+    }
+
+.right-block-container-title
+   {
+	position			:  absolute ; 
+	top				:  -16px; 
+	right				:  8px ;
+    }
+
+
+/**************************************************************************************************
+
+	Experience page.
+
+ **************************************************************************************************/
+li.ui-menutree-item-active > span.ui-menutree-icon-single
+   {
+   	background-position		:  -160px -112px;
+    }
+
+.ui-menutree-item .experience-period
+   {
+	display				:  block ;
+	font-style			:  italic ;
+	font-size			:  11px ;
+    }
+
+.ui-menutree-item .experience-title
+   {
+	margin-left			:  18px ;
+	margin-bottom			:  4px ;
+    }
+
+.experience-period, .experience-title
+   {
+	display				:  inline-block ;
+    }
+
+.content-title .experience-period:after
+   {
+	content				:  " : " ;
+    }
+
+.download-resume
+   {
+   	font-family			:  "Palatino Linotype", times ;
+   	font-size			:  13px ;
+	color				:  #F8F4B8 ;
+	text-align			:  center ;
+    }
+
+.download-resume .download-resume-title
+   {
+	margin-bottom			:  16px ;
+    }
+
+.download-resume a
+   {
+   	font-family			:  "Palatino Linotype", times ;
+   	font-size			:  11px ;
+	color				:  #F8F4B8 ;
+	text-decoration			:  none ;
+	outline				:  0 ;
+    }
+
+.experience-contents
+   {
+	padding-top			:  4px ;
+    }
+
+.experience-contents .experience-item
+   {
+	padding-bottom			:  16px ;
+    }
+
+.experience-contents .experience-item .company-name
+   {
+	color				:  #791B36 ;
+	font-weight			:  bold ;
+	font-size			:  14px ;
+    }
+
+.experience-contents .experience-item .company-description
+   {
+	padding-top			:  6px ;
+	text-align			:  justify ;
+    }
+
+.experience-contents .experience-position div
+   {
+	color				:  #791B36 ;
+	font-size			:  13px !important ;
+    }
+
+.experience-contents .experience-item > div
+   {
+	margin-left			:  22px ;
+	font-size			:  13px ;
+    }
+
+.experience-contents .experience-item h1
+   {
+   	font-family			:  Consolas, "Courier New", Arial, Courrier ;
+   	font-size			:  16px ;
+   	font-weight			:  bold ;
+	margin				:  0px ;
+	color				:  #791B36 ;
+    }
+
+.experience-contents .experience-item ul
+   {
+	margin				:  0px ;
+	padding-left			:  16px ;
+    }
+
+.experience-contents .experience-item ul li
+   {
+
+    }
+
+
+/**************************************************************************************************
+
+	Projects page.
+
+ **************************************************************************************************/
+
+.project-latest-updates
+   {
+	margin-top			:  6px ;
+	padding-right			:  4px ;
+    }
+
+.project-update-date
+   {
+	font-weight			:  bolder ;
+    }
+
+.project-update-date:after
+   {
+	content				:  " -" ;
+    }
+
+.project-update-list
+   {
+	margin-bottom			:  8px ;
+    }
+
+.project-update-list table
+   {
+	width				:  100% ;
+    }
+
+.project-left-column
+   {
+	text-align			:  left ;
+    }
+
+.project-right-column
+   {
+	text-align			:  right ;
+	font-size			:  11px ;
+    }
+
+.project-name-icon
+   {
+	position			:  relative ;
+	padding-left			:  8px ;
+    }
+
+.project-name 
+   {
+	margin-left			:  30px ;
+    }
+
+.project-presentation
+   {
+   	font-family			:  "Palatino Linotype", courrier ;
+   	color				:  Black ;
+   	font-size			:  12px ;
+	margin-bottom			:  8px ;
+	margin-top			:  4px ;
+    }
