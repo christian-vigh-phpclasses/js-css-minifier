@@ -24,6 +24,15 @@ Minifying a Javascript file would not require too much modifications :
 	$minifier 	=  new JavascriptMinifier ( ) ;
 	echo $minifier -> Minify ( 'example.css' ) ;
 
+# A SHORT NOTE ABOUT THE EXAMPLES #
+
+The examples that you will find in the *examples/* directory display the contents of a minified example file. They can either be run as command-line scripts or as web pages.
+
+In the case of a web page, you have to be aware that the minified contents will be rendered by your browser ; this means  you could notice that some text disappeared, some extra newlines have been added, etc.
+
+This is not a bug of the class, but simply a problem of rendering minified contents in a browser. To get sure, you can use the **MinifyTo** or **MinifyFileTo** methods to write the minified contents
+to a file, then use a text editor to view them.
+
 # A SHORT NOTE ABOUT THE DESIGN OF THE MINIFIER CLASSES #
 
 These classes have been designed, of course, to minimize the amount of data to be transferred during an HTTP request. Depending on your way of coding (spacing, amount of comments, etc.), you may notice a size reduction that may range from, say, 35% to 70%.
