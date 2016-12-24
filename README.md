@@ -1,10 +1,10 @@
 # INTRODUCTION #
 
-The **Minifier** package is a set of classes aimed at minifying CSS, Javascript and Php contents.
+The **Minifier** package is a set of classes aimed at minifying CSS, Javascript, Php and HTML contents.
 
 Additional langages may be supported, since the abstract **Minifier** base class provides some support methods for that.
 
-All **Minifier** classes (**CssMinifier**, **JavascriptMinifier** and **PhpMinifier**) provide the same methods to the caller, since they inherit from the abstract **Minifier** class.
+All **Minifier** classes (**CssMinifier**, **JavascriptMinifier**, **PhpMinifier** and **HtmlMinifier**) provide the same methods to the caller, since they inherit from the abstract **Minifier** class.
 
 # EXAMPLE #
 
