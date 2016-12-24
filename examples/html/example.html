@@ -1,0 +1,101 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+
+<head>
+	<title>PHP benchmarks</title>
+
+	<link type="text/css" rel="stylesheet" href="css/site.css" />
+
+	<meta http-equiv="charset" content="ISO-8859-1" />
+
+	<meta name="author" content="Christian Vigh" />
+	<meta name="copyright" content="Christian Vigh, 2016" />
+	<meta name="robots" content="all" />
+	<meta name="publisher" content="Christian Vigh" />
+	<meta name="description" content="Measure PHP performance across versions" />
+	<meta name="keywords" content="Christian Vigh,PHP performance,PHP benchmark,Benchmarking PHP" />
+	<script language='javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+	<script language='javascript' src='//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+	<script language='javascript' src='/thrak/Javascript/thrak.jqueryext-1.0.2.js'></script>
+	<script language='javascript' src='/thrak/Javascript/thrak.script-1.0.1.js'></script>
+	<script language='javascript' src='/thrak/Javascript/thrak.ui.msgbox-1.2.2.js'></script>
+	<script language='javascript' src='/thrak/Javascript/contribs/phpjs/functions/strings/sprintf.js'></script>
+	<script language='javascript' src='/thrak/Javascript/contribs/phpjs/functions/var/intval.js'></script>
+	<script language='javascript' src='/thrak/Javascript/contribs/phpjs/functions/var/floatval.js'></script>
+	<script language='javascript' src='/thrak/Javascript/contribs/phpjs/functions/var/is_numeric.js'></script>
+	<script language='javascript' src='/thrak/Javascript/thrak.ui.form-1.0.0.js'></script>
+	<script language='javascript' src='/thrak/Javascript/thrak.locale-1.0.0.js'></script>
+	<script language='javascript' src='/thrak/Javascript/thrak.ui.menutree-1.0.2.js'></script>
+	<script language='javascript' src='/thrak/Javascript/thrak-1.0.2.js'></script>
+	<script language='javascript' src='/thrak/Javascript/thrak.jsext-1.0.0.js'></script>
+	<script language='javascript' src='/thrak/Javascript/thrak.uri-1.0.0.js'></script>
+	<script language='javascript' src='/thrak/Javascript/thrak.ui.stickyfooter-1.0.2.js'></script>
+	<link rel='stylesheet' type='text/css' href='/thrak/Css/themes/thrak/jquery-ui-1.10.3.custom.css'>
+	<link rel='stylesheet' type='text/css' href='/thrak/Css/Thrak.css'>
+	<script type="text/javascript">
+		$( document ).ready
+		   (
+			function () {
+				$( '#footer' ).stickyFooter();
+			}
+		    );
+	</script>
+	<script type="text/javascript">
+		$( document ).ready
+		   (
+			function () {
+				// Create the menu tree objects
+				$( '.menutree' ).menutree().menutree
+				   (
+					'option',
+					{
+						method: 'inline',
+						contentSelector: '.contents',
+						onSelect: function () {
+							$( '#footer' ).stickyFooter();
+						}
+					}
+				    );
+
+				// Position to the anchor that was specified in the url
+				var anchor = url.anchor();
+
+				if ( anchor )
+					$( '.menutree' ).menutree( 'select', anchor, true );
+			}
+		    );
+	</script>
+
+	<style>
+		a {
+			background-color: #FFFFFF;
+		}
+	</style>
+
+</head>
+
+<body>
+<pre>
+		this is some text
+		that remains untouched.
+</pre>
+
+	some string in the body
+	<!-- this is a comment -->
+	<p>
+		coucou
+		coucou2
+	</p>
+	<!--[if IE]>
+		conditional
+			comment
+				for
+					IE.
+				<p>some paragraph here</p>
+	<![endif]-->
+
+
+	<p class="yes">end of document</p>
+</body>
+</html>
